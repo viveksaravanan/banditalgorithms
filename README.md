@@ -1,4 +1,4 @@
-# banditalgorithms
+# Multi-armed Bandit Algorithms
 
 Exploring and evaluating the effectivness of multi-armed bandits.
 
