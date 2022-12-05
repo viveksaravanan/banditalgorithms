@@ -7,11 +7,11 @@ from ucb import ucb_normal
 from ucb import asymp_ucb_normal
 from ucb import moss_normal
 
-# test with only 10 simulations
+# test with only 20 simulations
 mu1 = 0
 mu2s = [0.01 * d for d in range(0, 101)]
 n = 1000
-numsim = 10
+numsim = 20
 
 def ucb_norm_plot(mu1, mu2s, n, numsim):
     regrets_ucb_normal = []

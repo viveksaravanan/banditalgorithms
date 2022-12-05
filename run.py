@@ -3,7 +3,6 @@
 
 import sys
 import os
-import json
 from pathlib import Path
 import subprocess
 
@@ -35,7 +34,5 @@ def main(targets):
         )
 
 if __name__ == '__main__':
-    # run via:
-    # python main.py data features model
     targets = sys.argv[1:]
     main(targets)

@@ -10,7 +10,7 @@ mu1 = 0
 mu1_sig_var, mu2_sig_var = 1, 1
 mu2s = [0.01 * d for d in range(0,101)]
 n = 1000
-numsim = 100
+numsim = 20
 priors_lst = [[(0, 1), (0, 1)]]#, [(0, 1), (0.5, 1)]]#, [(0.5, 1), (0, 1)], [(0, 0.1), (0.5, 0.1)], [(0.5, 0.1), (0, 0.1)]]
 
 def ts_norm_plot(mu1, mu2s, priors, n, numsim):

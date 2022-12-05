@@ -7,11 +7,11 @@ from ucb import ucb_bernoulli
 from ucb import moss_bernoulli
 from ucb import klucb_bernoulli
 
-# test with only 5 simulations
+# test with only 20 simulations
 mu1 = .5
 mu2s = [0.01 * d for d in range(20, 81)]
 n = 1000
-numsim = 5
+numsim = 20
 
 def ucb_bern_plot(mu1, mu2s, n, numsim):
     regrets_ucb_bernoulli = []

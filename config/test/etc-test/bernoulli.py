@@ -10,7 +10,7 @@ mu1 = 0.5
 mu2s = [0.01 * d for d in range(20,81)]
 ms = [25]#, 50, 75, 100, 'optimal']
 n = 1000
-numsim = 5
+numsim = 20
 
 def etc_bern_plot(mu1, mu2s, m, n, numsim):
     regrets = []
