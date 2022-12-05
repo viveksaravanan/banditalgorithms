@@ -18,4 +18,5 @@ Exploring and evaluating the effectivness of multi-armed bandits.
 - python run.py linear
   - runs Linear Thompson Sampling and Linear Upper Confidence Bound algorithms
 
+
 Results are plots which are saved in '/Results'
