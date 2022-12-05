@@ -26,12 +26,6 @@ def main(targets):
     elif 'linear' in targets:
         configs = (config_root / "linear").rglob("*py")
 
-    # subprocess.call(
-    #         args=[
-    #             "python",
-    #             str(configs)
-    #         ]
-    #     ) 
     for x in configs:   
         subprocess.call(
             args=[
