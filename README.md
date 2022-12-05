@@ -4,7 +4,8 @@ Exploring and evaluating the effectivness of multi-armed bandits.
 
 ## Experimentts
 
-- python run.py all # runs all experiments
+- python run.py all 
+  - runs all experiments
 - python run.py test # runs on a subset of all experiments
 
 - python run.py etc # runs Explore-then-Commit algorithms
