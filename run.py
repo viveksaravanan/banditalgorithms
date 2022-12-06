@@ -9,7 +9,6 @@ import subprocess
 sys.path.insert(0, 'src')
 
 config_root = Path(__file__).resolve().parent / "config"
-result_root = Path(__file__).resolve().parent/ "Results"
 
 
 def main(targets):
@@ -18,20 +17,19 @@ def main(targets):
     elif 'all' in targets:
         configs = (config_root/ "all").rglob("*.py")
     elif 'etc' in targets:
-        configs = (config_root / "etc").rglob("*.py")
+        configs = (config_root / "all" / "etc").rglob("*.py")
     elif 'ucb' in targets:
-        configs = (config_root / "ucb").rglob("*.py")
+        configs = (config_root / "all" / "ucb").rglob("*.py")
     elif 'ts' in targets:
-        configs = (config_root / "ts").rglob("*.py")
+        configs = (config_root / "all" / "ts").rglob("*.py")
     elif 'linear' in targets:
-        configs = (config_root / "linear").rglob("*py")
+        configs = (config_root / "all" /"linear").rglob("*py")
 
     for x in configs:   
         subprocess.call(
             args=[
                 "python",
-                str(x),
-                str(result_root / x.parent_name / x.name[:-2])
+                str(x)
             ]
         )
 
