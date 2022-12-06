@@ -1,0 +1,4 @@
+{
+    "dockerhub-id": "viveksaravanan/banditalgorithms:latest",
+    "build-script": "python /home/jovyan/banditalgorithms/run.py test"
+}
