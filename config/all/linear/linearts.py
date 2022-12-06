@@ -8,7 +8,7 @@ from lints import lin_ts
 vs = [0.01 * d for d in range(-20,21)]
 a_s = [[0.1, -0.1], [0.1, -0.2], [0.1, 0.2]]
 n = 1000
-numsim = 10
+numsim = 1000
 
 def lin_ts_plot(vs, a, n, numsim):
     regrets = []

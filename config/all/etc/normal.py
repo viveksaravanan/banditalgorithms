@@ -7,9 +7,9 @@ from etc import etc_normal
 
 mu1 = 0
 mu2s = [0.01 * d for d in range(0,101)]
-ms = [25]#, 50, 75, 100, 'optimal']
+ms = [25, 50, 75, 100, 'optimal']
 n = 1000
-numsim = 5
+numsim = 1000
 
 def etc_norm_plot(mu1, mu2s, m, n, numsim):
     regrets = []

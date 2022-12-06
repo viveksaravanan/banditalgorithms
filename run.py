@@ -9,6 +9,7 @@ import subprocess
 sys.path.insert(0, 'src')
 
 config_root = Path(__file__).resolve().parent / "config"
+result_root = Path(__file__).resolve().parent/ "Results"
 
 
 def main(targets):
@@ -29,7 +30,8 @@ def main(targets):
         subprocess.call(
             args=[
                 "python",
-                str(x)
+                str(x),
+                str(result_root / x.parent_name / x.name[:-2])
             ]
         )
 
